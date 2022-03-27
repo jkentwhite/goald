@@ -1,0 +1,87 @@
+/* colors */
+:root {
+  --primary: #000;
+  --secondary: #000;
+  --title: #ecaf53;
+}
+
+/* layout styles */
+nav {
+  background: var(--primary);
+  border-bottom: 10px solid var(--secondary);
+}
+nav a {
+  text-transform: uppercase;
+  color: var(--title);
+}
+nav a span {
+  font-weight: bold;
+}
+nav .sidenav-trigger {
+  margin: 0;
+}
+.side-menu {
+  background-color: black;
+}
+.sidenav .subheader {
+  color: var(--title);
+}
+.sidenav li > a {
+  color: var(--title);
+}
+
+span {
+  color: var(--title);
+}
+
+/* project styles */
+.projects {
+  margin-top: 20px;
+}
+.card-panel.project {
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgb(90, 90, 90, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.project img {
+  grid-area: image;
+  max-width: 60px;
+}
+.project-details {
+  grid-area: details;
+  margin-top: 6px;
+}
+.project-delete {
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+}
+.project-delete i {
+  font-size: 18px;
+}
+.project-title {
+  font-weight: bold;
+}
+.project-description {
+  font-size: 0.8em;
+}
+
+/* form styles */
+.add-btn {
+  background: var(--title) !important;
+}
+input {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button {
+  background: var(--title);
+  box-shadow: 1px 1px 3px rgb(90, 90, 90, 0.2);
+}
+form .input-field {
+  margin-top: 30px;
+}
