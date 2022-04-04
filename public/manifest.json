@@ -1,0 +1,16 @@
+{
+    "name": "GOALD",
+    "short_name": "GOALD",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#000",
+    "them_color": "#f1f1f1",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/img/icons/icon-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        }
+    ]
+}

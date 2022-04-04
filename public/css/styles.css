@@ -75,6 +75,7 @@ span {
   background: var(--title) !important;
 }
 input {
+  color: #f1f1f1;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
 }

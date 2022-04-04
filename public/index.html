@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" href="/css/styles.css" rel="stylesheet">
     <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#000">
+
 </head>
 <body class="black">
 
@@ -33,49 +39,8 @@
 
     <!-- content -->
     <div class="projects container grey-text text-darken-1">
-        <div class="card-panel project black row">
-            <i class="material-icons">photo</i>
-            <div class="project-details">
-                <div class="project-title">superflo</div>
-                <div class="project-description">a game of evasive maneuvering</div>
-            </div>
-            <div class="project-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
-
-        <div class="card-panel project black row">
-            <i class="material-icons">photo</i>
-            <div class="project-details">
-                <div class="project-title">superflo</div>
-                <div class="project-description">a game of evasive maneuvering</div>
-            </div>
-            <div class="project-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
-
-        <div class="card-panel project black row">
-            <i class="material-icons">photo</i>
-            <div class="project-details">
-                <div class="project-title">superflo</div>
-                <div class="project-description">a game of evasive maneuvering</div>
-            </div>
-            <div class="project-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
-
-        <div class="card-panel project black row">
-            <i class="material-icons">photo</i>
-            <div class="project-details">
-                <div class="project-title">superflo</div>
-                <div class="project-description">a game of evasive maneuvering</div>
-            </div>
-            <div class="project-delete">
-                <i class="material-icons">delete_outline</i>
-            </div>
-        </div>
+        <h6 class="center">GOALS</h6>
+        
     </div>
 
     <div class="center">
@@ -102,6 +67,28 @@
         </form>
     </div>
 
+
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+    <script>
+        
+    const config = {
+        apiKey: "AIzaSyChL5iDpmhjdNe_J8DihH8HWNKTIQeYEto",
+        authDomain: "goald-7b8ce.firebaseapp.com",
+        projectId: "goald-7b8ce",
+        storageBucket: "goald-7b8ce.appspot.com",
+        messagingSenderId: "670900497435",
+        appId: "1:670900497435:web:3719e2a8e0c1bf92d49cbe",
+        measurementId: "G-XYKZW6JL1Q"
+    };
+    
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
+
+    </script>
+
+    <script src="/js/app.js"></script>
     <script src="/js/ui.js"></script>
+    <script src="/js/db.js"></script>
 </body>
 </html>
